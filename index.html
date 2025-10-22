@@ -42,21 +42,63 @@
               <p class="text-left">Usuarios</p>
           </td>
           <td>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end" data-bs-theme="light">
-
-        <button class="btn btn-primary " type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-          Agregar
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-          <li><a class="dropdown-item" href="#">Modal Agregar</a></li>
-          <li><a class="dropdown-item" href="#">Nickname</a></li>
-          <li><a class="dropdown-item" href="#">Nombre</a></li>
-          <li><a class="dropdown-item" href="#">Roles</a></li>
-        </ul>
-        </td>
-
+            <button type="button" class="btn btn-primary  float-end" style="transform: translateY(-6px); "
+              data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar</button>
+          </td>
       </tr>
       </table>
+       <div class="modal fade" id="modalAgregar" tabindex="-1">
+    <div class="modal-dialog">
+      <form class="modal-content" id="formAgregar">
+        <div class="modal-header">
+          <h5 class="modal-title">Agregar usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">NickName</label>
+            <input type="text" class="form-control" id="nickInput" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombreInput" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Roles</label>
+            <input type="text" class="form-control" id="rolInput" required>
+          </div>
+          <div class="form-check form-switch form-check-reverse form-check-inline">
+            <input class="form-check-input" type="checkbox" id="estadoAgregar">
+            <label class="form-check-label" for="estadoAgregar">Activo</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+   <div class="modal fade" id="modalEditar" tabindex="-1">
+    <div class="modal-dialog">
+      <form class="modal-content" id="formEditar">
+        <div class="modal-header">
+          <h5 class="modal-title">Editar usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3"><label class="form-label">NickName</label><input type="text" class="form-control" id="editNick"></div>
+          <div class="mb-3"><label class="form-label">Nombre</label><input type="text" class="form-control" id="editNombre"></div>
+          <div class="mb-3"><label class="form-label">Roles</label><input type="text" class="form-control" id="editRol"></div>
+          <div class="form-check form-switch form-check-reverse form-check-inline"><input class="form-check-input" type="checkbox" id="editEstado"><label class="form-check-label" for="editEstado">Activo</label></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
 
       <br>
@@ -85,20 +127,7 @@
                     <label class="form-check-label" for="switchCheckChecked"></label>
                     </div>
                 </td>
-                <td>
-                    <div class="d-grid gap-2 d-md-flex" data-bs-theme="light">
-
-                    <button class="btn btn-secondary " type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-                        Editar
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                    <li><a class="dropdown-item" href="#">Modal Editar</a></li>
-                    <li><a class="dropdown-item" href="#">Nickname</a></li>
-                    <li><a class="dropdown-item" href="#">Nombre</a></li>
-                    <li><a class="dropdown-item" href="#">Roles</a></li>
-                    </ul>
-                    </div>
-                </td>
+               <td><button type="button" class="btn btn-link editar-btn" data-bs-toggle="modal" data-bs-target="#modalEditar">Editar</button></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -111,20 +140,7 @@
                     <label class="form-check-label" for="switchCheckChecked"></label>
                     </div>
                 </td>
-                <td>
-                    <div class="d-grid gap-2 d-md-flex " data-bs-theme="light">
-
-                    <button class="btn btn-secondary " type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-                        Editar
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                    <li><a class="dropdown-item" href="#">Modal Editar</a></li>
-                    <li><a class="dropdown-item" href="#">Nickname</a></li>
-                    <li><a class="dropdown-item" href="#">Nombre</a></li>
-                    <li><a class="dropdown-item" href="#">Roles</a></li>
-                    </ul>
-                    </div>
-                    </td>
+                <td><button type="button" class="btn btn-link editar-btn" data-bs-toggle="modal" data-bs-target="#modalEditar">Editar</button></td>
             </tr>
              <tr>
                 <td>3</td>
@@ -137,20 +153,7 @@
                     <label class="form-check-label" for="switchCheckChecked"></label>
                     </div>
                 </td>
-                <td>
-                    <div class="d-grid gap-2 d-md-flex" data-bs-theme="light">
-
-                    <button class="btn btn-secondary " type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-                        Editar
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                    <li><a class="dropdown-item" href="#">Modal Editar</a></li>
-                    <li><a class="dropdown-item" href="#">Nickname</a></li>
-                    <li><a class="dropdown-item" href="#">Nombre</a></li>
-                    <li><a class="dropdown-item" href="#">Roles</a></li>
-                    </ul>
-                    </div>
-                </td>
+                <td><button type="button" class="btn btn-link editar-btn" data-bs-toggle="modal" data-bs-target="#modalEditar">Editar</button></td>
             </tr>
              <tr>
                 <td>4</td>
@@ -163,20 +166,8 @@
                     <label class="form-check-label" for="switchCheckChecked"></label>
                     </div>
                 </td>
-                <td>
-                    <div class="d-grid gap-2 d-md-flex" data-bs-theme="light">
-
-                    <button class="btn btn-secondary " type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-                        Editar
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                    <li><a class="dropdown-item" href="#">Modal Editar</a></li>
-                    <li><a class="dropdown-item" href="#">Nickname</a></li>
-                    <li><a class="dropdown-item" href="#">Nombre</a></li>
-                    <li><a class="dropdown-item" href="#">Roles</a></li>
-                    </ul>
-                    </div>
-                </td>
+                <td><button type="button" class="btn btn-link editar-btn" data-bs-toggle="modal" data-bs-target="#modalEditar">Editar</button></td>
+                
             </tr>
 
              
@@ -194,6 +185,7 @@
             <button type="button" class="btn btn-primary">5</button>
             <button type="button" class="btn btn-primary">6</button>
             <button type="button" class="btn btn-primary">7</button>
+            <button type="button" class="btn btn-primary">8</button>
         </div>
         </div>
                 
