@@ -9,58 +9,58 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="roles.html">4C</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Usuarios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="roles.html">Roles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="permisos.html">Permisos</a>
-        </li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="roles.html">4C</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Usuarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="roles.html">Roles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="permisos.html">Permisos</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="button">Salir</button>
+          </form>
+        
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <br>
+      <table class="table">
+      <tr>
+          <td>
+              <p class="text-left">Usuarios</p>
+          </td>
+          <td>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end" data-bs-theme="light">
+
+        <button class="btn btn-primary " type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+          Agregar
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+          <li><a class="dropdown-item" href="#">Modal Agregar</a></li>
+          <li><a class="dropdown-item" href="#">Nickname</a></li>
+          <li><a class="dropdown-item" href="#">Nombre</a></li>
+          <li><a class="dropdown-item" href="#">Roles</a></li>
         </ul>
-        <form class="d-flex" role="search">
-        <button class="btn btn-outline-success" type="button">Salir</button>
-      </form>
-    
-    </div>
-  </div>
-</nav>
+        </td>
 
-<div class="container">
-<br>
-<table class="table">
-<tr>
-    <td>
-        <p class="text-left">Usuarios</p>
-    </td>
-    <td>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end" data-bs-theme="light">
-
-  <button class="btn btn-primary " type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-    Agregar
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-    <li><a class="dropdown-item" href="#">Modal Agregar</a></li>
-    <li><a class="dropdown-item" href="#">Nickname</a></li>
-    <li><a class="dropdown-item" href="#">Nombre</a></li>
-    <li><a class="dropdown-item" href="#">Roles</a></li>
-  </ul>
-</div>
-    </td>
-    
-</table>
+      </tr>
+      </table>
 
 
-<br>
-<div class="container ">
+      <br>
+
         <div class="table-responsive">
         <table class="table table-hover table-striped table-bordered">
         <thead>
@@ -182,9 +182,10 @@
              
             
         </tbody>
-    </table>
+        </table>
         </div>
-        <div class= "position-absolute top-50 start-50 translate-middle" role="toolbar" aria-label="Toolbar with button groups"></div>
+        <br>
+        <div class= "position-absolute  start-50 translate-middle" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group me-2" role="group" aria-label="First group">
             <button type="button" class="btn btn-primary">1</button>
             <button type="button" class="btn btn-primary">2</button>
@@ -194,8 +195,9 @@
             <button type="button" class="btn btn-primary">6</button>
             <button type="button" class="btn btn-primary">7</button>
         </div>
-                
         </div>
+                
+        
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
